@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="info">Calculate Me</h2>
+    <div class="cont">
+        
+        <div class="calculator">
+            <div class="display">
+                <input type="text" name="display" readonly id="result">
+            </div>
+            <div>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="clearResult()">AC</button>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="result.value = result.value.toString().slice(0,-1)">DE</button>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="append('.')">.</button>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="append('/')">/</button>
+            </div>
+            <div>
+                <button type="button"  onclick="append('7')">7</button>
+                <button type="button"  onclick="append('8')">8</button>
+                <button type="button"  onclick="append('9')">9</button>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="append('*')">*</button>
+            </div>
+            <div>
+                <button type="button"  onclick="append('4')">4</button>
+                <button type="button"  onclick="append('5')">5</button>
+                <button type="button"  onclick="append('6')">6</button>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="append('-')">-</button>
+            </div>
+            <div>
+                <button type="button"  onclick="append('1')">1</button>
+                <button type="button"  onclick="append('2')">2</button>
+                <button type="button"  onclick="append('3')">3</button>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="append('+')">+</button>
+            </div>
+            <div>
+                <button type="button" style="color: rgb(64, 226, 226);" onclick="append('%')">%</button>
+                <button type="button"  onclick="append('0')">0</button>
+                <button type="button" style="width: 145px; color: rgb(64, 226, 226);" class="equal" onclick="calculate()">=</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
